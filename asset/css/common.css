@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 400;
+  src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 500;
+  src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "NotoSans";
+  font-weight: 700;
+  src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/NotoSansKR-Bold.woff") format("woff"), url("../fonts/NotoSansKR-Bold.otf") format("opentype"); }
+body, ul, h1, h2, h3, h4, h5, h6, p, button {
+  margin: 0px;
+  padding: 0px; }
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto; }
+
+address {
+  font-style: normal; }
+
+header, nav, section, article, footer {
+  display: block; }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer; }
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: 0px; }
+
+.fl-left {
+  float: left; }
+
+.fl-right {
+  float: right; }
+
+.po-absol {
+  position: absolute; }
+
+.po-relat {
+  position: relative; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+body {
+  font-family: "NotoSans";
+  font-size: 14px;
+  color: #252525;
+  font-weight: 400; }
+
+#wrap {
+  min-width: 320px; }
+
+#header {
+  position: fixed;
+  z-index: 700;
+  width: 100%;
+  height: 90px;
+  background: #2a7fb8; }
+  #header .logo {
+    width: 100px;
+    position: absolute;
+    top: 12.9px;
+    left: 50%;
+    margin-left: -50px; }
+  #header .menu {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 800;
+    left: 10px;
+    top: 20px; }
+    #header .menu .line {
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      position: absolute;
+      left: 10px;
+      width: 30px;
+      height: 4px;
+      background: #fff; }
+    #header .menu .m-top {
+      top: 10px; }
+    #header .menu .m-mid {
+      top: 20px; }
+    #header .menu .m-btm {
+      top: 30px; }
+    #header .menu.active .m-top {
+      -webkit-transform: rotate(315deg);
+      transform: rotate(315deg);
+      top: 20px; }
+    #header .menu.active .m-mid {
+      opacity: 0;
+      -webkit-transform: rotate(-1080deg);
+      transform: rotate(-1080deg); }
+    #header .menu.active .m-btm {
+      -webkit-transform: rotate(-315deg);
+      transform: rotate(-315deg);
+      top: 20px; }
+
+#dim {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 699;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+#gnb {
+  -webkit-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  position: fixed;
+  z-index: 700;
+  left: 0px;
+  top: 0px;
+  margin-left: -200px;
+  width: 200px;
+  height: 100%;
+  margin-top: 90px;
+  background: #2a7fb8;
+  opacity: 0; }
+  #gnb.active {
+    margin-left: 0px;
+    opacity: 1; }
+  #gnb ul li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-top: 1px solid #fff; }
+    #gnb ul li a {
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      text-indent: 30px; }
+  #gnb ul li:last-child {
+    border-bottom: 1px solid #fff; }
+
+#content {
+  padding-top: 90px; }
+
+.main-tit {
+  margin: 20px 0px;
+  text-align: center; }
+
+#footer .footer-link {
+  padding-left: 59px;
+  padding-top: 8px; }
+  #footer .footer-link span:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    border-left: 1px solid #252525;
+    margin: 0px 15px; }
+#footer .copy {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 8px; }
+#footer .sns-icon {
+  font-size: 35px;
+  text-align: center;
+  margin: 15px 0px; }
+  #footer .sns-icon .fa-facebook {
+    color: #2a7fb8; }
+  #footer .sns-icon .fb, #footer .sns-icon .blog, #footer .sns-icon .insta {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    background: url("../images/common/ir-tmpl.png") no-repeat; }
+  #footer .sns-icon .fb {
+    background-position: -201px -7px; }
+  #footer .sns-icon .blog {
+    background-position: -239px -7px; }
+  #footer .sns-icon .insta {
+    background-position: -349px -7px; }
+
+/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title> 마음이 편안한 태안 </title>
+    <link rel="stylesheet" href="asset/css/swiper.css">
+    <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="apple-touch-icon" href="asset/images/common/apple-favi.png">
+    <link rel="shortcut icon" href="asset/images/common/ad-favi.png">
+
+    <script src="asset/js/jquery-1.12.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="asset/js/swiper.min.js"></script>
+    <script src="asset/js/common.js"></script>
+    <script src="asset/js/index.js"></script>
+
+</head>
+<body>
+    <!-- https://dept.galleria.co.kr/rightgalleria/index-mobile.jsp
+    나 자신 / 기준점 * 100 = ;
+    -->
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="asset/images/common/logo-fontWhite.png" alt="태안군 로고">
+                </a>
+            </h1>
+            <button class="menu" type="button">
+                <span class="sr-only">메뉴열기</span>
+                <span class="line m-top"></span>
+                <span class="line m-mid"></span>
+                <span class="line m-btm"></span>
+            </button>
+            <nav id="gnb">
+                <h2 class="sr-only">주메뉴</h2>
+                <ul class="clearfix">
+                    <li>
+                        <a href="best/best.html">관광명소</a>
+                    </li>
+                    <li>
+                        <a href="festival/festival.html">축제 &amp; 공연</a>
+                    </li>
+                    <li>
+                        <a href="">여행정보</a>
+                    </li>
+                    <li>
+                        <a href="">태안관광지도</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="content">
+            <h2 class="sr-only">메인 본문</h2>
+            <article class="main-cnt1 po-relat">
+                <h3 class="sr-only">관광명소 사진 슬라이더</h3>
+                <p class="col-white">아름다운 경관을<br>자랑하는 태안</p>
+                <div class="swiper-container">
+                    <!-- 슬라이더 상세내용 그룹 -->
+                    <div class="swiper-wrapper">
+                        <!-- 상세내용 -->
+                        <div class="swiper-slide">
+                            <a href="best/best.html#slider1"><img src="asset/images/best/mountain-winter.jpg" alt="제1경 백화산"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="best/best.html#slider2"><img src="asset/images/best/castle-0.jpg" alt="제2경 안흥성"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="best/best.html#slider3"><img src="asset/images/best/beach-0.jpg" alt="제4경 만리포 해수욕장"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="best/best.html#slider4"><img src="asset/images/best/island-0.jpg" alt="제8경 할미 할아비바위"></a>
+                        </div>
+                    </div>
+                    <!-- 페이징 번호 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </article>
+    
+            <article class="main-cnt2">
+                <h3 class="main-tit">축제 &amp; 공연</h3>
+                <div id="festivalArea" class="clearfix">
+                    <div class="festival-thumbnail">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="asset/images/festival/light-0.jpg" alt="태안 빛축제 전경">
+                                    <p>태안 빛축제</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="asset/images/festival/sand-0.jpg" alt="태안 모래조각 축제 글씨 조각">
+                                    <p>국제 모래조각 축제</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="asset/images/festival/prawn-0.jpg" alt="싱싱한 자연산 대하">
+                                    <p>백사장 대하축제</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="asset/images/festival/fishing-0.jpg" alt="바다낚시 대회 수상">
+                                    <p>바다낚시 대회</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="main-cnt3">
+                <div class="po-relat">
+                    <h3 class="main-tit">관광 도우미</h3>
+                    <button class="detail-icon" type="button">전체보기</button>
+                </div>
+                <div id="helpIconWrap" class="po-relat">
+                    <div class="help-icon" aria-live="polite">
+                        <ul>
+                            <li><a href=""><img src="asset/images/main/icon_night.svg" alt="">숙박</a></li>
+                            <li><a href=""><img src="asset/images/main/icon_plate.svg" alt="">식사</a></li>
+                            <li><a href=""><img src="asset/images/main/icon_bus.svg" alt="">교통</a></li>
+                            <li><a href=""><img src="asset/images/main/icon_newspaper.svg" alt="">관광안내</a></li>
+                            <li><a href=""><img src="asset/images/main/icon_location.svg" alt="">지도</a></li>
+                            <li><a href=""><img src="asset/images/main/play.svg" alt="">사이버투어</a></li>
+                        </ul>
+                    </div>
+                    <div class="help-icon-btn">
+                        <button id="prev-btn" type="button">
+                            <span class="sr-only">이전버튼</span>
+                            <img src="asset/images/common/icon_big_left.gif" alt="이전버튼">
+                        </button>
+                        <button id="next-btn" type="button">
+                            <span class="sr-only">다음버튼</span>
+                            <img src="asset/images/common/icon_big_right.gif" alt="다음버튼">
+                        </button>
+                    </div>
+                    <div class="help-icon-paging">
+                        <span></span> / <span></span>
+                    </div>
+                </div>
+            </article>
+            <div id="notice" class="po-relat">
+                <h4>공지사항</h4>
+                <p>공지사항 내용입니다. 중요한 공지사항은 팝업형식으로 공지합니다.</p>
+                <a href=""><span class="sr-only">공지사항 페이지로 이동</span></a>
+            </div>
+        </section>
+    
+        <footer id="footer">
+            <p class="footer-link">
+                <span>개인정보 처리방침</span>
+                <span>이메일 무단수집 거부</span>
+            </p>
+            <p class="footer-link">
+                <span>관광안내 책자신청</span>
+                <span>찾아오는길</span>
+            </p>
+            <p class="copy">COPYRIGHT&copy; 2019 by taean-gun. All Rights Reserved.</p>
+            <div class="sns-icon">
+                <a class="fb" target="_blank" title="새창" href="https://www.facebook.com/taeansns">
+                    <span class="sr-only">태안 페이스북</span>
+                </a>
+                <a class="blog" target="_blank" title="새창" href="https://blog.naver.com/taeanblog">
+                    <span class="sr-only">태안 블로그</span>
+                </a>
+                <a class="insta" target="_blank" title="새창" href="https://www.instagram.com/taeangun/">
+                    <span class="sr-only">태안 인스타그램</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
