@@ -74,6 +74,8 @@ article + article {
   color: #fff; }
   #notice h4, #notice p {
     padding: 8px; }
+  #notice h4 {
+    padding-bottom: 0px; }
   #notice p {
     letter-spacing: -0.5px;
     font-size: 11px; }
@@ -100,9 +102,6 @@ article + article {
       width: 30px;
       height: 4px; }
 
-.best-cnt-wrap {
-  margin-bottom: 100px; }
-
 .sub-main-cnt1 a img {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -116,16 +115,19 @@ article + article {
   left: 0px;
   bottom: 0px;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  height: 44px;
+  line-height: 44px;
   text-indent: 50px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff; }
 .sub-main-cnt1 .swiper-button-prev,
 .sub-main-cnt1 .swiper-button-next {
   position: absolute;
-  bottom: 0px;
-  background: rgba(0, 0, 0, 0.5); }
+  top: calc(100% - 22px); }
+.sub-main-cnt1 .swiper-button-prev {
+  left: 0px; }
+.sub-main-cnt1 .swiper-button-next {
+  right: 0px; }
 .sub-main-cnt1 .swiper-button-prev::after,
 .sub-main-cnt1 .swiper-button-next::after {
   display: block;
@@ -133,5 +135,80 @@ article + article {
   height: 1px;
   overflow: hidden;
   padding-top: 10px; }
+
+.explain {
+  padding: 0px 15px; }
+  .explain p {
+    padding: 15px 0px; }
+  .explain .explain-btn-wrap {
+    position: relative;
+    margin-bottom: 50px; }
+    .explain .explain-btn-wrap button {
+      position: absolute;
+      top: 8px;
+      background: #2a7fb8;
+      color: #fff;
+      font-size: 11px;
+      width: 68px;
+      height: 22px; }
+    .explain .explain-btn-wrap button:first-child {
+      right: 78px; }
+    .explain .explain-btn-wrap button:last-child {
+      right: 0px; }
+  .explain .detail-explain {
+    position: relative;
+    display: none; }
+    .explain .detail-explain li {
+      margin-bottom: 20px; }
+      .explain .detail-explain li img, .explain .detail-explain li p {
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        opacity: 0; }
+      .explain .detail-explain li img {
+        -webkit-transform: translateX(70px);
+        transform: translateX(70px); }
+      .explain .detail-explain li p {
+        -webkit-transform: translateX(-70px);
+        transform: translateX(-70px);
+        padding: 15px 15px; }
+    .explain .detail-explain li.active img,
+    .explain .detail-explain li.active p {
+      -webkit-transform: translateX(0px);
+      transform: translateX(0px);
+      opacity: 1; }
+    .explain .detail-explain .btn-back {
+      position: absolute;
+      bottom: -22px;
+      right: 0px;
+      background: #2a7fb8;
+      color: #fff;
+      font-size: 11px;
+      width: 68px;
+      height: 22px; }
+
+.festival-explain p {
+  font-size: 13px;
+  padding-left: 15px; }
+.festival-explain p:first-child {
+  padding-top: 12px; }
+
+.modal-common {
+  visibility: hidden;
+  position: fixed;
+  z-index: 699;
+  background: #fff;
+  margin-top: 30px; }
+
+#modal p, #modal strong {
+  padding-left: 15px; }
+#modal p:nth-of-type(1) {
+  padding-top: 12px; }
+#modal .close-btn {
+  width: 100%;
+  height: 5vh;
+  color: #fff;
+  background: #2a7fb8;
+  margin-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */

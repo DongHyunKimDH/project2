@@ -103,6 +103,9 @@ article + article {
     h4, p {
         padding : 8px;
     }
+    h4 {
+        padding-bottom : 0px;
+    }
     p {
         letter-spacing : -0.5px;
         font-size : 11px;
@@ -137,9 +140,7 @@ article + article {
 }
 
 // best.html
-.best-cnt-wrap {
-    margin-bottom : 100px;
-}
+
 .sub-main-cnt1 {
     a img {
         @include transition(all 0.5s);
@@ -153,8 +154,8 @@ article + article {
         left : 0px;
         bottom : 0px;
         width : 100%;
-        height : 50px;
-        line-height : 50px;
+        height : 44px;
+        line-height : 44px;
         text-indent : 50px;
         background : rgba(0,0,0,0.5);
         color : #fff;
@@ -162,8 +163,13 @@ article + article {
     .swiper-button-prev,
     .swiper-button-next {
         position : absolute;
-        bottom : 0px;
-        background : rgba(0,0,0,0.5);
+        top : calc(100% - 22px);
+    }
+    .swiper-button-prev {
+        left : 0px;
+    }
+    .swiper-button-next {
+        right : 0px;
     }
     .swiper-button-prev::after,
     .swiper-button-next::after {
@@ -172,5 +178,100 @@ article + article {
         height : 1px;
         overflow : hidden;
         padding-top : 10px;
+    }
+}
+
+// best-detail
+.explain {
+    padding : 0px 15px;
+    p {
+        padding : 15px 0px;
+    }
+    .explain-btn-wrap {
+        position : relative;
+        margin-bottom : 50px;
+        button {
+            position : absolute;
+            top : 8px;
+            background : $mainColor;
+            color : #fff;
+            font-size : 11px;
+            width : 68px;
+            height : 22px;
+        }
+        button:first-child {
+            
+            right : 78px;
+        }
+        button:last-child {
+            right : 0px;
+        }
+    }
+    .detail-explain {
+        position : relative;
+        display : none;
+        li {
+            margin-bottom : 20px;
+            img, p {
+                @include transition(all 0.5s);
+                opacity : 0;
+            }
+            img {
+                @include transform(translateX(70px));
+            }
+            p {
+                @include transform(translateX(-70px));
+                padding : 15px 15px;
+            }
+        }
+        li.active img,
+        li.active p {
+            @include transform(translateX(0px));
+            opacity : 1;
+        }
+        .btn-back {
+            position : absolute;
+            bottom : -22px;
+            right : 0px;
+            background : $mainColor;
+            color : #fff;
+            font-size : 11px;
+            width : 68px;
+            height : 22px;
+        }
+    }
+}
+// festival 
+.festival-explain {
+    p {
+        font-size : 13px;
+        padding-left : 15px;
+    }
+    p:first-child {
+        padding-top : 12px;
+    }
+}
+
+.modal-common {
+    visibility : hidden;
+    // display : none;
+    position : fixed;
+    z-index : 699;
+    background : #fff;
+    margin-top : 30px;
+}
+#modal {
+    p,strong {
+        padding-left : 15px;
+    }
+    p:nth-of-type(1) {
+        padding-top : 12px;
+    }
+    .close-btn {
+        width : 100%;
+        height : 5vh;
+        color : #fff;
+        background : $mainColor;
+        margin-top : 15px;
     }
 }

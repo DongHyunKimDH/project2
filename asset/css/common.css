@@ -60,14 +60,19 @@ button {
   display: block;
   clear: both; }
 
+.locationbar {
+  padding: 15px 15px; }
+
 body {
   font-family: "NotoSans";
   font-size: 14px;
   color: #252525;
-  font-weight: 400; }
+  font-weight: 400;
+  word-break: keep-all; }
 
 #wrap {
-  min-width: 320px; }
+  min-width: 320px;
+  overflow: hidden; }
 
 #header {
   position: fixed;
@@ -167,37 +172,39 @@ body {
   margin: 20px 0px;
   text-align: center; }
 
-#footer .footer-link {
-  padding-left: 59px;
-  padding-top: 8px; }
-  #footer .footer-link span:first-child::after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 12px;
-    border-left: 1px solid #252525;
-    margin: 0px 15px; }
-#footer .copy {
-  font-size: 12px;
-  text-align: center;
-  padding-top: 8px; }
-#footer .sns-icon {
-  font-size: 35px;
-  text-align: center;
-  margin: 15px 0px; }
-  #footer .sns-icon .fa-facebook {
-    color: #2a7fb8; }
-  #footer .sns-icon .fb, #footer .sns-icon .blog, #footer .sns-icon .insta {
-    display: inline-block;
-    vertical-align: middle;
-    width: 36px;
-    height: 36px;
-    background: url("../images/common/ir-tmpl.png") no-repeat; }
-  #footer .sns-icon .fb {
-    background-position: -201px -7px; }
-  #footer .sns-icon .blog {
-    background-position: -239px -7px; }
-  #footer .sns-icon .insta {
-    background-position: -349px -7px; }
+#footer {
+  margin-top: 50px; }
+  #footer .footer-link {
+    padding-left: 59px;
+    padding-top: 8px; }
+    #footer .footer-link span:first-child::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 12px;
+      border-left: 1px solid #252525;
+      margin: 0px 15px; }
+  #footer .copy {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 8px; }
+  #footer .sns-icon {
+    font-size: 35px;
+    text-align: center;
+    margin: 15px 0px; }
+    #footer .sns-icon .fa-facebook {
+      color: #2a7fb8; }
+    #footer .sns-icon .fb, #footer .sns-icon .blog, #footer .sns-icon .insta {
+      display: inline-block;
+      vertical-align: middle;
+      width: 36px;
+      height: 36px;
+      background: url("../images/common/ir-tmpl.png") no-repeat; }
+    #footer .sns-icon .fb {
+      background-position: -201px -7px; }
+    #footer .sns-icon .blog {
+      background-position: -239px -7px; }
+    #footer .sns-icon .insta {
+      background-position: -349px -7px; }
 
 /*# sourceMappingURL=common.css.map */

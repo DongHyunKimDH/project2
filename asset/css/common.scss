@@ -73,6 +73,9 @@ button {
     display : block;
     clear : both;
 }
+.locationbar {
+    padding : 15px 15px;
+}
 
 
 body {
@@ -80,9 +83,11 @@ body {
     font-size : 14px;
     color : #252525;
     font-weight : 400;
+    word-break : keep-all;
 }
 #wrap {
     min-width : 320px;
+    overflow : hidden;
 }
 #header {
     position : fixed;
@@ -194,6 +199,7 @@ body {
 }
 
 #footer {
+    margin-top : 50px;
     .footer-link {
         padding-left : 59px;
         padding-top : 8px;
