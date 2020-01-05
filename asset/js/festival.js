@@ -27,5 +27,23 @@ $(document).ready(function()
         $(window).trigger("resize");
         _dim.stop().fadeIn().next().css("visibility", "visible");
         _first.focus();
+        _closeBtn.on("click",function()
+        {
+            _dim.stop().fadeOut(function() 
+            {
+                $(this).remove();
+            });
+            _target.css("visibility","hidden").siblings().removeAttr("aria-hidden inert");
+            _openBtn.focus();
+        });
+        _dim.on("click",function()
+        {
+            _closeBtn.click();
+        });
+        $(window).on("keydown",function(e)
+        {
+            if(e.keyCode == 27) _closeBtn.click();
+        });
+
     });
 });

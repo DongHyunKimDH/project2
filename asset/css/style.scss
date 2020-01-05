@@ -254,13 +254,14 @@ article + article {
 
 .modal-common {
     visibility : hidden;
-    // display : none;
     position : fixed;
     z-index : 699;
     background : #fff;
-    margin-top : 30px;
 }
 #modal {
+    img {
+        padding-top : 25px;
+    }
     p,strong {
         padding-left : 15px;
     }
