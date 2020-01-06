@@ -6,9 +6,15 @@ $(document).ready(function()
         var scrollY = $(this).scrollTop();
         if(scrollY >= _header.outerHeight(true))
         {
-            _header.css("background", "rgba(0,0,0,0.5)");
+            _header.addClass("active");
+            _header.find(".logo").addClass("active").next().addClass("actives").next().stop().animate({marginTop : "60px"});
         }
-        else if (scrollY == 0) _header.css("background", "#2a7fb8");
+        else if(scrollY == 0)
+        {
+            _header.removeClass("active");
+            _header.find(".logo").removeClass("active").next().removeClass("actives").next().stop().animate({marginTop : "90px"});
+        }
+        
         // else if()
     });
     $(".menu").on("click",function()
@@ -24,12 +30,11 @@ $(document).ready(function()
             $(this).parent().before("<div id='dim'></dim>");
             $(this).toggleClass("active").next().toggleClass("active");
             _dim = $("#dim");
+            _dim.on("click",function()
+            {
+                $(this).remove();
+                $(".menu, #gnb").removeClass("active");
+            });
         }
-        _dim.on("click",function()
-        {
-
-            $(this).remove();
-            $(".menu, #gnb").removeClass("active");
-        });
     });
 });

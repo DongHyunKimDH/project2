@@ -21,7 +21,7 @@
         <header id="header">
             <h1 class="logo">
                 <a href="../index.html">
-                    <img src="../asset/images/common/logo-fontWhite.png" alt="태안군 로고">
+                    <img src="../asset/images/common/logo-fontWhite.png" alt="태안군">
                 </a>
             </h1>
             <button class="menu" type="button">
@@ -53,12 +53,13 @@
             <h2 class="sr-only">메인 본문</h2>
             <div class="locationbar">
                 <a href="../index.html"><img src="../asset/images/common/icon_home.gif" alt="메인페이지 바로가기"></a>
-                 &gt; <span>축제 &amp; 공연</span> &gt; <span>태안 빛축제</span>
+                 &gt; <span>축제 &amp; 공연</span> &gt; <span>태안 빛 축제</span>
             </div>
             <article class="sub-main-cnt1 po-relat">
                 <h3 class="sr-only">태안 빛 축제</h3>
-                <button class="open-btn" type="button" data-href="#modal" aria-haspopup="dialog" title="대화상자">
-                    <img src="../asset/images/festival/light-0.jpg" alt="태안 빛축제">
+                <button class="open-btn po-relat" type="button" data-href="#modal" aria-haspopup="dialog" title="대화상자">
+                    <img src="../asset/images/festival/light-0-x1.jpg" srcset="../asset/images/festival/light-0-x2.jpg 2x, ../asset/images/festival/light-0-x3.jpg 3x" alt="태안 빛 축제">
+                    <img class="modal-zoom" src="../asset/images/festival/img-zoom-gray.png" alt="">
                 </button>
 
                 <div class="festival-explain">
@@ -98,13 +99,30 @@
         </footer>
         <div id="modal" class="modal-common" role="dialog" aria-modal="true" aria-labelledby="tit1">
             <h4 id="tit1" class="sr-only">태안 빛축제 상세 내용</h4>
-            <img src="../asset/images/festival/light-1.jpg" alt="태안 빛축제 연못 위 조명오리 한쌍">
+            <div class="modal-slider po-relat" aria-live="polite">
+                <ul class="clearfix">
+                    <li><img class="modal-img" src="../asset/images/festival/light-1-x1.jpg" srcset="../asset/images/festival/light-1-x2.jpg 2x, ../asset/images/festival/light-1-x3.jpg 3x" alt="연못 위 조명오리 한쌍"></li>
+                    <li><img class="modal-img" src="../asset/images/festival/light-3-x1.jpg" srcset="../asset/images/festival/light-3-x2.jpg 2x, ../asset/images/festival/light-3-x3.jpg 3x" alt="조명화원을 걷는 연인"></li>
+                    <li>
+                        <img src="../asset/images/festival/light-0-x1.jpg" srcset="../asset/images/festival/light-0-x2.jpg 2x, ../asset/images/festival/light-0-x3.jpg 3x" alt="태안 빛축제 입구">
+                    </li>
+                </ul>
+                <div class="modal-slider-btn po-relat">
+                    <button data-link="first" type="button">
+                        <img src="../asset/images/common/icon_big_left.png" alt="">
+                    </button>
+                    <button type="button">
+                        <img src="../asset/images/common/icon_big_right.png" alt="">
+                    </button>
+                </div>
+            </div>
             <p data-link="first">행사장소 : 태안꽃 축제장​</p>
             <p>행사기간 : 연중무휴 (입장시간이 시즌별로 상이하오니 홈페이지 확인바랍니다.)</p>
             <strong>※ 우천시 입장불가​</strong>
             <p>홈페이지 : http://www.ffestival.co.kr/web/​</p>
             <p>주최/주관 : 태안꽃축제추진위원회/네이처영농조합법인,<br>태안반도백합수출영농조합법인, 아다람농업회사법인안 빛 축제</p>
             <button class="close-btn" data-link="last" type="button">닫기</button>
+            
         </div>
     </div>
 </body>

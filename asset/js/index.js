@@ -11,8 +11,21 @@ $(document).ready(function()
           // clickable : true, // 인디케이터 클릭시 슬라이더 이동
         },
       });
-  
+    var _hoverLi = $(".festival-thumbnail ul li");
+    _hoverLi.on({
+      mouseenter : function() 
+      {
+        console.log("d");
+        $(this).addClass("active");
+      },
+      mouseleave : function() 
+      {
+        $(this).removeClass("active");
+      }
+    });
 
+    
+    
     var _ul = $("#helpIconWrap .help-icon ul");
     var _span = $("#helpIconWrap .help-icon-paging span");
     var liWidth = _ul.children().outerWidth(true);
@@ -53,7 +66,14 @@ $(document).ready(function()
       }
       else
       {
-        _ul.css({width : liWidth*liLength, height : ulHeight*1, marginLeft :  -liWidth*pageSet*blockSet});
+        
+        _ul.stop().animate({
+          height : ulHeight,
+          marginLeft : -liWidth*pageSet*blockSet
+        },500 ,
+        function(){
+          _ul.css({width : liWidth*liLength});
+        });
         $(".help-icon-btn, .help-icon-paging").css("visibility","visible");
         ariaHidden();
       }

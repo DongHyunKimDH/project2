@@ -24,6 +24,9 @@ article + article {
                 display : block;
                 height : 100%;
             }
+            img {
+                width : 100%;
+            }
         }
     }
 }
@@ -31,6 +34,7 @@ article + article {
     #festivalArea {
         text-align : center;
         .festival-thumbnail ul li {
+            position : relative;
             float : left;
             width : calc(50% - 5px);
             a {
@@ -38,6 +42,39 @@ article + article {
                 img {
                     width : 100%;
                 }
+            }
+            .hover-view {
+                @include transition(all 0.5s);
+                opacity : 0;
+                display: table;
+                background : rgba(0,0,0,0.6);
+                color : #fff;
+                text-align : center;
+                width : 100%;
+                height : 100%;
+                top : 0px;
+                font-size : 12px;
+                p {
+                    padding : 15px 0px;
+                }
+                a {
+                    position : absolute;
+                    left : 50%;
+                    top : 50%;
+                    margin-left : -41px;
+                    margin-top : -1.15em;
+                    width : 80px;
+                    height :2.3em;
+                    line-height : 2.3em;
+                    border : 1px solid #fff;
+                    &:hover {
+                        background : #fff;
+                        color : #252525;
+                    }
+                }
+            }
+            &.active .hover-view {
+                opacity : 1;
             }
         }
         .festival-thumbnail ul li:nth-child(even) {
@@ -64,6 +101,7 @@ article + article {
             @include transition(height 0.5s);
             width : 528px;
             height : 107px;
+            overflow : hidden;
             text-align : center;
             li {
                 float : left;
@@ -242,6 +280,17 @@ article + article {
     }
 }
 // festival 
+.open-btn {
+    width : 100%;
+    img:first-child {
+        width : 100%;
+    }
+}
+.modal-zoom {
+    position : absolute;
+    right : 10px;
+    bottom : 10px;   
+}
 .festival-explain {
     p {
         font-size : 13px;
@@ -257,10 +306,39 @@ article + article {
     position : fixed;
     z-index : 699;
     background : #fff;
+    margin-top : 25px;
 }
 #modal {
-    img {
-        padding-top : 25px;
+    width : 100%;
+    .modal-slider {
+        overflow : hidden;
+        ul {
+            li {
+                float : left;
+                img {
+                    width : 100%;
+                }
+            }
+        }
+        .modal-slider-btn {
+            position : absolute;
+            width : 100%;
+            height : 50px;
+            background : rgba(0,0,0,0.2);
+            bottom : 0px;
+            button {
+                position : absolute;
+            }
+            button:first-child {
+                left : 0px;
+            }
+            button:last-child {
+                right : 0px;
+            }
+        }
+    }
+    .modal-img {
+        width : 100%;
     }
     p,strong {
         padding-left : 15px;

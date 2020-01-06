@@ -43,7 +43,7 @@ $(document).ready(function()
         }
         else
         {
-          history.back();
+          location.href="/project2/index.html";
         }
       });
       $(".detail-explain button").on("click",function()

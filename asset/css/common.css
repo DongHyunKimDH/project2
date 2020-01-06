@@ -75,17 +75,29 @@ body {
   overflow: hidden; }
 
 #header {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   position: fixed;
   z-index: 700;
   width: 100%;
   height: 90px;
   background: #2a7fb8; }
+  #header.active {
+    background: rgba(0, 0, 0, 0.5);
+    height: 60px; }
   #header .logo {
-    width: 100px;
-    position: absolute;
-    top: 12.9px;
-    left: 50%;
-    margin-left: -50px; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    #header .logo.active img {
+      width: 63px; }
+    #header .logo img {
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      width: 100px; }
   #header .menu {
     position: absolute;
     width: 50px;
@@ -93,6 +105,8 @@ body {
     z-index: 800;
     left: 10px;
     top: 20px; }
+    #header .menu.actives {
+      top: 10px; }
     #header .menu .line {
       -webkit-border-radius: 8px;
       border-radius: 8px;

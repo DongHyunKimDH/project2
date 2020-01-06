@@ -1,5 +1,7 @@
 $(document).ready(function()
 {
+    var _winWidth = $(window).width();
+    var _liWidth = $(".modal-slider ul li");
     $(".open-btn").on("click",function()
     {
         var _openBtn = $(this);
@@ -27,6 +29,20 @@ $(document).ready(function()
         $(window).trigger("resize");
         _dim.stop().fadeIn().next().css("visibility", "visible");
         _first.focus();
+        _first.on("keydown",function (e)
+        {
+            if(e.shiftKey && e.keyCode == 9) {
+                e.preventDefault();
+                _last.focus();
+            }
+        });
+        _last.on("keydown",function(e)
+        {
+            if(e.keyCode == 9 && !e.shiftKey) {
+                e.preventDefault();
+                _first.focus();
+            }
+        });
         _closeBtn.on("click",function()
         {
             _dim.stop().fadeOut(function() 
@@ -46,4 +62,30 @@ $(document).ready(function()
         });
 
     });
+
+    var _ul = $(".modal-slider ul");
+    _liWidth = _winWidth;
+    var liLength = _ul.children().length;
+    var pageSet = 1;
+    var blockSet = 0;
+    var maxBlockSet = Math.ceil(liLength/pageSet)-1;
+    
+    _ul.css({width : _liWidth*liLength});
+    _ul.children().css({width : _winWidth});
+    ariaHidden();
+    $(".modal-slider .modal-slider-btn button").on("click",function()
+    {
+      var btnIdx = $(this).index();
+      if(btnIdx == 0 && blockSet == 0) return false;
+      if(btnIdx == 1 && blockSet == maxBlockSet) return false;
+      if(_ul.is(":animated")) return false;
+      btnIdx == 0 ? blockSet-- : blockSet++;
+      _ul.stop().animate({marginLeft : -_liWidth*pageSet*blockSet},ariaHidden);
+    });
+    function ariaHidden() 
+    {
+      _ul.children().attr("aria-hidden","true");
+      _ul.children().eq(blockSet*pageSet).nextUntil(_ul.children().eq(blockSet*pageSet+pageSet)).addBack().attr("aria-hidden","false");
+    }
+
 });
