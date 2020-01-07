@@ -9,15 +9,13 @@ article + article {
   z-index: 100;
   color: #fff;
   text-shadow: 1px 1px 2px #000; }
-.main-cnt1 .swiper-wrapper {
-  height: 220px; }
-  .main-cnt1 .swiper-wrapper .swiper-slide {
+.main-cnt1 .swiper-wrapper .swiper-slide {
+  height: 100%; }
+  .main-cnt1 .swiper-wrapper .swiper-slide a {
+    display: block;
     height: 100%; }
-    .main-cnt1 .swiper-wrapper .swiper-slide a {
-      display: block;
-      height: 100%; }
-    .main-cnt1 .swiper-wrapper .swiper-slide img {
-      width: 100%; }
+  .main-cnt1 .swiper-wrapper .swiper-slide img {
+    width: 100%; }
 
 .main-cnt2 #festivalArea {
   text-align: center; }
@@ -29,36 +27,6 @@ article + article {
       display: block; }
       .main-cnt2 #festivalArea .festival-thumbnail ul li a img {
         width: 100%; }
-    .main-cnt2 #festivalArea .festival-thumbnail ul li .hover-view {
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      opacity: 0;
-      display: table;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      top: 0px;
-      font-size: 12px; }
-      .main-cnt2 #festivalArea .festival-thumbnail ul li .hover-view p {
-        padding: 15px 0px; }
-      .main-cnt2 #festivalArea .festival-thumbnail ul li .hover-view a {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -41px;
-        margin-top: -1.15em;
-        width: 80px;
-        height: 2.3em;
-        line-height: 2.3em;
-        border: 1px solid #fff; }
-        .main-cnt2 #festivalArea .festival-thumbnail ul li .hover-view a:hover {
-          background: #fff;
-          color: #252525; }
-    .main-cnt2 #festivalArea .festival-thumbnail ul li.active .hover-view {
-      opacity: 1; }
   .main-cnt2 #festivalArea .festival-thumbnail ul li:nth-child(even) {
     margin-left: 10px; }
 
@@ -143,6 +111,8 @@ article + article {
 .sub-main-cnt1 a:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
+.sub-main-cnt1 .swiper-slide a img {
+  width: 100%; }
 .sub-main-cnt1 .swiper-slide p {
   position: absolute;
   display: block;
@@ -169,6 +139,9 @@ article + article {
   height: 1px;
   overflow: hidden;
   padding-top: 10px; }
+
+h3.sr-only + img {
+  width: 100%; }
 
 .explain {
   padding: 0px 15px; }
@@ -201,7 +174,8 @@ article + article {
         opacity: 0; }
       .explain .detail-explain li img {
         -webkit-transform: translateX(70px);
-        transform: translateX(70px); }
+        transform: translateX(70px);
+        width: 100%; }
       .explain .detail-explain li p {
         -webkit-transform: translateX(-70px);
         transform: translateX(-70px);

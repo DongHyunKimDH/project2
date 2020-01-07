@@ -178,6 +178,7 @@ body {
     margin-top : 90px;
     background : $mainColor;
     opacity : 0;
+    overflow-y : auto;
     &.active {
         margin-left : 0px;
         opacity : 1;
