@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title> 태안 빛 축제 : 축제 &amp; 공연 : 태안 </title>
+    <title> 축제 &amp; 공연 : 태안 </title>
     <link rel="stylesheet" href="../asset/css/swiper.css">
     <link rel="stylesheet" href="../asset/css/common.css">
     <link rel="stylesheet" href="../asset/css/style.css">
@@ -12,8 +12,9 @@
 
     <script src="../asset/js/jquery-1.12.4.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../asset/js/swiper.min.js"></script>
     <script src="../asset/js/common.js"></script>
-    <script src="../asset/js/festival.js"></script>
+    <script src="../asset/js/festival-idx.js"></script>
 
 </head>
 <body>
@@ -53,24 +54,41 @@
             <h2 class="sr-only">메인 본문</h2>
             <div class="locationbar">
                 <a href="../index.html"><img src="../asset/images/common/icon_home.gif" alt="메인페이지 바로가기"></a>
-                 &gt; <span>축제 &amp; 공연</span> &gt; <span>태안 빛 축제</span>
+                 &gt; <span>축제 &amp; 공연</span>
             </div>
             <article class="sub-main-cnt1 po-relat">
-                <h3 class="sr-only">태안 빛 축제</h3>
-                <button class="open-btn po-relat" type="button" data-href="#modal" aria-haspopup="dialog" title="대화상자">
-                    <img src="../asset/images/festival/light-0-x1.jpg" srcset="../asset/images/festival/light-0-x2.jpg 2x, ../asset/images/festival/light-0-x3.jpg 3x" alt="태안 빛 축제">
-                    <img class="modal-zoom" src="../asset/images/festival/img-zoom-gray.png" alt="클릭시 대화상자">
-                </button>
-
-                <div class="festival-explain">
-                    <p>장소 : 충청남도 태안군 남면 마검포길 200</p>
-                    <p>문의 : 041-675-9200</p>
-                    <p>＃해양도시 태안! 사계절을 밝히다<br>
-                        이제는 어느덧 관광명소로 자리 잡은 태안 빛 축제!<br>
-                        하계시즌에만 집중됐던 태안이 365일 관광객들이 끊임없이<br>
-                        방문하면서 자연스레 주변관광 자원과 연계되고<br>
-                        나아가 지역경제에 보탬이 되며 활기가 넘치는<br>
-                        도시로 탈바꿈하는데 일조</p>
+                <h3 class="sr-only">축제 사진 슬라이더</h3>
+                <div class="swiper-container po-relat">
+                    <!-- 슬라이더 상세내용 그룹 -->
+                    <div class="swiper-wrapper">
+                        <!-- 상세내용 -->
+                        <div id="slider1" class="swiper-slide">
+                            <a href="festival-light.html">
+                                <img src="../asset/images/festival/light-0-x1.jpg" srcset="../asset/images/festival/light-0-x2.jpg 2x, ../asset/images/festival/light-0-x3.jpg 3x" alt="태안 빛 축제 전경">
+                                <p class="col-white">태안 빛 축제</p>
+                            </a>
+                        </div>
+                        <div id="slider2" class="swiper-slide">
+                            <a href="festival-sand.html">
+                                <img src="../asset/images/festival/sand-0-x1.jpg" srcset="../asset/images/festival/sand-0-x2.jpg 2x, ../asset/images/festival/sand-0-x3.jpg 3x" alt="태안 모래조각 축제 글씨 조각">
+                                <p>국제 모래조각 축제</p>
+                        </a>
+                        </div>
+                        <div id="slider3" class="swiper-slide">
+                            <a href="festival-prawn.html">
+                                <img src="../asset/images/festival/prawn-0-x1.jpg" srcset="../asset/images/festival/prawn-0-x2.jpg 2x, ../asset/images/festival/prawn-0-x3.jpg 3x" alt="싱싱한 자연산 대하">
+                                <p>백사장 대하축제</p>
+                        </a>
+                        </div>
+                        <div id="slider4" class="swiper-slide">
+                            <a href="festival-fishing.html">
+                                <img src="../asset/images/festival/fishing-0-x1.jpg" srcset="../asset/images/festival/fishing-0-x2.jpg 2x, ../asset/images/festival/fishing-0-x3.jpg 3x" alt="바다낚시 대회 수상">
+                                <p>바다낚시 대회</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"><img src="../asset/images/common/icon_big_left.png" alt="이전페이지"></div>
+                    <div class="swiper-button-next"><img src="../asset/images/common/icon_big_right.png" alt="다음페이지"></div>
                 </div>
             </article>
         </section>
@@ -97,33 +115,6 @@
                 </a>
             </div>
         </footer>
-        <div id="modal" class="modal-common" role="dialog" aria-modal="true" aria-labelledby="tit1">
-            <h4 id="tit1" class="sr-only">태안 빛축제 상세 내용</h4>
-            <div class="modal-slider po-relat" aria-live="polite">
-                <ul class="clearfix">
-                    <li><img class="modal-img" src="../asset/images/festival/light-1-x1.jpg" srcset="../asset/images/festival/light-1-x2.jpg 2x, ../asset/images/festival/light-1-x3.jpg 3x" alt="연못 위 조명오리 한쌍"></li>
-                    <li><img class="modal-img" src="../asset/images/festival/light-3-x1.jpg" srcset="../asset/images/festival/light-3-x2.jpg 2x, ../asset/images/festival/light-3-x3.jpg 3x" alt="조명화원을 걷는 연인"></li>
-                    <li>
-                        <img src="../asset/images/festival/light-0-x1.jpg" srcset="../asset/images/festival/light-0-x2.jpg 2x, ../asset/images/festival/light-0-x3.jpg 3x" alt="태안 빛축제 입구">
-                    </li>
-                </ul>
-                <div class="modal-slider-btn po-relat">
-                    <button data-link="first" type="button">
-                        <img src="../asset/images/common/icon_big_left.png" alt="이전페이지">
-                    </button>
-                    <button type="button">
-                        <img src="../asset/images/common/icon_big_right.png" alt="다음페이지">
-                    </button>
-                </div>
-            </div>
-            <p data-link="first">행사장소 : 태안꽃 축제장​</p>
-            <p>행사기간 : 연중무휴 (입장시간이 시즌별로 상이하오니 홈페이지 확인바랍니다.)</p>
-            <strong>※ 우천시 입장불가​</strong>
-            <p>홈페이지 : <a href="http://www.ffestival.co.kr/web/​" target="_blank">http://www.ffestival.co.kr/web/​</a></p>
-            <p>주최/주관 : 태안꽃축제추진위원회/네이처영농조합법인,<br>태안반도백합수출영농조합법인, 아다람농업회사법인안 빛 축제</p>
-            <button class="close-btn" data-link="last" type="button">닫기</button>
-            
-        </div>
     </div>
 </body>
 </html>

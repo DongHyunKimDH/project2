@@ -87,5 +87,8 @@ $(document).ready(function()
       _ul.children().attr("aria-hidden","true");
       _ul.children().eq(blockSet*pageSet).nextUntil(_ul.children().eq(blockSet*pageSet+pageSet)).addBack().attr("aria-hidden","false");
     }
-
+    $(".sub2-btn-back").on("click",function()
+    {
+        location.href="/project2/festival/festival.html";
+    });
 });

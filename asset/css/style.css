@@ -200,6 +200,16 @@ h3.sr-only + img {
   .open-btn img:first-child {
     width: 100%; }
 
+.sub2-btn-back {
+  position: relative;
+  left: 100%;
+  background: #2a7fb8;
+  color: #fff;
+  font-size: 11px;
+  width: 68px;
+  height: 22px;
+  margin: 15px 0px 0px -83px; }
+
 .modal-zoom {
   position: absolute;
   right: 10px;
