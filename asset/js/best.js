@@ -43,7 +43,7 @@ $(document).ready(function()
         }
         else
         {
-          location.href="/project2/index.html";
+          location.href="/project2/best/best.html";
         }
       });
       $(".detail-explain button").on("click",function()

@@ -28,6 +28,27 @@ article + article {
                 width : 100%;
             }
         }
+        .swiper-pagination {
+            background : #000;
+            .swiper-pagination-bullet {
+                background : #fff;
+                opacity : 1;
+            }
+        }
+        
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #fff;
+        opacity: 1;
+      }
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #2a7fb8;
     }
 }
 .main-cnt2 {

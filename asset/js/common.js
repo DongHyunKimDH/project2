@@ -4,15 +4,15 @@ $(document).ready(function()
     $(window).on("scroll",function() 
     {
         var scrollY = $(this).scrollTop();
-        if(scrollY >= _header.outerHeight(true))
+        if(scrollY >= _header.outerHeight())
         {
             _header.addClass("active");
-            _header.find(".logo").addClass("active").next().addClass("actives").next().stop().animate({marginTop : "60px"});
+            _header.find(".logo").addClass("active").next().addClass("actives").next().stop().animate({marginTop : "55px"});
         }
         else if(scrollY == 0)
         {
             _header.removeClass("active");
-            _header.find(".logo").removeClass("active").next().removeClass("actives").next().stop().animate({marginTop : "90px"});
+            _header.find(".logo").removeClass("active").next().removeClass("actives").next().stop().animate({marginTop : "60px"});
         }
         
         // else if()

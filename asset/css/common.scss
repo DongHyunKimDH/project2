@@ -94,11 +94,12 @@ body {
     position : fixed;
     z-index : 700;
     width : 100%;
-    height : 90px;
+    height : 60px;
     background : $mainColor;
     &.active {
-        background : rgba(0,0,0,0.5);
-        height : 60px;
+        background : $mainColor;
+        // opacity : 0.8;
+        height : 55px;
     }
     .logo {
         display : flex;
@@ -106,11 +107,12 @@ body {
         align-items : center;
         height : 100%;
         &.active img{
-            width : 63px;
+            width : 55px;
         }
         img {
+            vertical-align: middle;
             @include transition(all 0.5s);
-            width : 100px;
+            width : 60px;
         }
     }
     .menu {
@@ -119,9 +121,9 @@ body {
         height : 50px;
         z-index : 800;
         left : 10px;
-        top : 20px;
+        top : 10px;
         &.actives {
-            top : 10px;
+            top : 8px;
         }
         .line {
             @include borderRadius(8px);
@@ -175,7 +177,7 @@ body {
     margin-left : -200px;
     width : 200px;
     height : 100%;
-    margin-top : 90px;
+    margin-top : 60px;
     background : $mainColor;
     opacity : 0;
     overflow-y : auto;
@@ -205,7 +207,7 @@ body {
     }
 }
 #content {
-    padding-top : 90px;
+    padding-top : 60px;
 }
 .main-tit {
     margin : 20px 0px;

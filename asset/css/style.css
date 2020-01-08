@@ -16,6 +16,21 @@ article + article {
     height: 100%; }
   .main-cnt1 .swiper-wrapper .swiper-slide img {
     width: 100%; }
+.main-cnt1 .swiper-wrapper .swiper-pagination {
+  background: #000; }
+  .main-cnt1 .swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1; }
+.main-cnt1 .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 1; }
+.main-cnt1 .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #2a7fb8; }
 
 .main-cnt2 #festivalArea {
   text-align: center; }
